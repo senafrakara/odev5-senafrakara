@@ -21,7 +21,6 @@ $productCount = $products->rowcount();
 if ($productCount > 0) { //if there are some products in db
 
     $productsArr = array();
-    $categoryInfo = array();
 
     while ($row = $products->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
